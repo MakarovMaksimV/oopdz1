@@ -48,7 +48,6 @@ public class Animal {
     public void toGo() {System.out.println("Бегу!");}
     public void fly() {System.out.println("Лечу!");}
     public void swim() {System.out.println("Плыву!");}
-
     @Override
     public String toString() {
         return String.format("Кличка = %s, дата рождения = %s, хозяин = %s, заболевание = %s",nickName,birthDate,
