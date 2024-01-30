@@ -35,7 +35,6 @@ public class Main {
 //        animal.add(cat);
 //        for (int i = 0; i< animal.size(); i++) {System.out.println(animal.get(i));}
 
-
         System.out.println();
         System.out.println("Домашнее задание");
         System.out.println();

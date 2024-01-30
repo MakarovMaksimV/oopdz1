@@ -19,17 +19,9 @@ public class Animal {
         this.illness = illness;
     }
 
-    public Animal(){
-    this("кличка", new Owner("Хозяин"), LocalDate.now(),new Illness("Болеет"));
-    }
-    public String getType()
-    {
-        return getClass().getSimpleName();
-    }
-    public String getNickname() {
-        return nickName;
-    }
-
+    public Animal(){this("кличка", new Owner("Хозяин"), LocalDate.now(),new Illness("Болеет"));}
+    public String getType() {return getClass().getSimpleName();}
+    public String getNickname() {return nickName;}
     public Owner getOwner() {return owner;}
     public LocalDate getBirthDate() {return birthDate;}
     public Illness getIllness() {return illness;}
@@ -44,18 +36,17 @@ public class Animal {
         this.eat();
         this.sleep();
     }
-    private  void wakeUp(String time){System.out.println("Животное " + nickName + " проснулось в " + time);}
 
+    private  void wakeUp(String time){System.out.println("Животное " + nickName + " проснулось в " + time);}
     public void getGenus() {System.out.println(genus);}
     public void skills() {
         this.toGo();
         this.fly();
         this.swim();
     }
+
     public void toGo() {System.out.println("Бегу!");}
-
     public void fly() {System.out.println("Лечу!");}
-
     public void swim() {System.out.println("Плыву!");}
 
     @Override
